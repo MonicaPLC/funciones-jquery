@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="query.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>Click</h2>
+      <button id="click">click</button>
+      <p>Haz click en el botón para recibir un mensaje</p>
+    </div>
+
+    <div>
+      <h2>Hide</h2>
+      <button id="hide">hide</button>
+      <p>Haz click en el botón para hacer desaparecer el botón</p>
+    </div>
+
+    <div>
+      <h2>Show</h2>
+      <button id="show">Show</button>
+      <p>Haz click en botón para mostrar párrafo oculto</p>
+      <p id="oculto">Estaba oculto</p>
+    </div>
+
+    <div>
+      <h2>toggle</h2>
+      <button id="toggle">toggle</button>
+      <p id="t">Haz click en botón para ocultar párrafo</p>
+    </div>
+
+    <div>
+      <h2>slideDown</h2>
+      <button id="slideDown">slideDown</button>
+      <p id="sD">Haz click en botón para mostrar párrafo oculto</p>
+      <p id="po">Bienvenidos a mi página web</p>
+    </div>
+
+    <div>
+      <h2>slideUp</h2>
+      <button id="slideUp">slideUp</button>
+      <p id="sU">Haz click en botón para ocultar párrafo</p>
+    </div>
+
+    <div>
+      <h2>SlideToggle</h2>
+      <button id="ST">SlideToggle</button>
+      <p id="SlideToggle">Haz click en el botón para esconder este párrafo</p>
+    </div>
+
+    <div>
+      <h2>fadeIn</h2>
+      <button id="fadeIn">fadeIn</button>
+      <p id="fI">Haz click en botón para que aparezca el párrafo</p>
+    </div>
+
+    <div>
+      <h2>fadeOut</h2>
+      <button id="fadeOut">fadeOut</button>
+      <p id="fO">Haz click en botón para ocultar el párrafo</p>
+    </div>
+
+    <div>
+      <h2>Agrega Clase</h2>
+      <button id="addClass">addClass</button>
+      <p>Haz click en el botón para que cambie de color</p>
+    </div>
+
+    <div>
+      <h2>Before</h2>
+      <button id="before">before</button>
+      <p>
+        Haz click en botón para agregar antes de Villarrica, la palabra Eclipse
+      </p>
+      <p id="Vill">Villarrica</p>
+    </div>
+
+    <div>
+      <h2>After</h2>
+      <button id="after">after</button>
+      <p>
+        Haz click en botón para agregar después de Eclipse, la palabra Temuco
+      </p>
+      <p id="eC">Eclipse</p>
+    </div>
+
+    <div>
+      <h2>Append</h2>
+      <button id="Append">Append</button>
+      <p>Haz click en botón para agregar Membrillo</p>
+
+      <ul id="frutas">
+        <li>Manzana</li>
+        <li>Uva</li>
+        <li>Pera</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>HTML</h2>
+      <button id="html">html</button>
+      <p id="pa">Haz click en botón para cambiar el párrafo</p>
+    </div>
+
+    <div>
+      <h2>Attr</h2>
+      <button id="attr">Attr</button>
+      <p id="at">Haz click en botón para cambiar el párrafo</p>
+    </div>
+
+    <div>
+      <h2>Text</h2>
+      <button id="text">text</button>
+      <p id="txt">Haz click en botón para cambiar el párrafo</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#click").click(function () {
+          alert("Hola");
+        });
+
+        $("#hide").on("click", function () {
+          $("#hide").hide();
+        });
+
+        $("#oculto").hide();
+        $("#show").on("click", function () {
+          $("#oculto").show();
+        });
+
+        $("#toggle").on("click", function () {
+          $("#t").toggle();
+        });
+
+        $("#po").hide();
+        $("#slideDown").on("click", function () {
+          $("#po").slideDown();
+        });
+
+        $("#slideUp").on("click", function () {
+          $("#sU").slideUp();
+        });
+
+        $("#ST").on("click", function () {
+          $("#SlideToggle").slideToggle();
+        });
+
+        $("#fI").hide();
+        $("#fadeIn").on("click", function () {
+          $("#fI").fadeIn();
+        });
+
+        $("#fadeOut").on("click", function () {
+          $("#fO").fadeOut();
+        });
+
+        $("#addClass").on("click", function () {
+          $("#addClass").addClass("blue");
+        });
+
+        $("#before").on("click", function () {
+          $("#Vill").before("Eclipse");
+        });
+
+        $("#after").on("click", function () {
+          $("#eC").before("Temuco");
+        });
+
+        $("#Append").on("click", function () {
+          $("#frutas").append("<li>Membrillo</li>"); // no se como colocarlo
+        });
+
+        $("#html").on("click", function () {
+          $("#pa").html("Este párrafo es mejor");
+        });
+
+        $("#attr").on("click", function () {
+          var parrafo = $("#at").attr("id");
+          alert(parrafo);
+        });
+
+        $("#text").on("click", function () {
+          $("#txt").text("Cambio con Text");
+        });
+      });
+
+      //$(elemento).fadeIn(speed,easing,callback)
+    </script>
+  </body>
+</html>
