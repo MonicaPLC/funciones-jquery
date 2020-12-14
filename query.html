@@ -3,118 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="query.css" />
+    <link rel="stylesheet" type="text/css" href="funciones.css" />
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <h2>Click</h2>
+    <div id="uno">
+      <h2 id="título_uno">Click</h2>
       <button id="click">click</button>
-      <p>Haz click en el botón para recibir un mensaje</p>
+      <p id="parrafo_uno">Haz click en el botón para recibir un mensaje</p>
+      <hr />
     </div>
 
     <div>
-      <h2>Hide</h2>
+      <h2 id="título_uno">Hide</h2>
       <button id="hide">hide</button>
-      <p>Haz click en el botón para hacer desaparecer el botón</p>
+      <p id="parrafo_uno">
+        Haz click en el botón para hacer desaparecer el botón
+      </p>
+      <hr />
     </div>
 
     <div>
-      <h2>Show</h2>
+      <h2 id="título_uno">Show</h2>
       <button id="show">Show</button>
-      <p>Haz click en botón para mostrar párrafo oculto</p>
+      <p id="parrafo_uno">Haz click en botón para mostrar párrafo oculto</p>
       <p id="oculto">Estaba oculto</p>
+      <hr />
     </div>
 
     <div>
-      <h2>toggle</h2>
+      <h2 id="título_uno">toggle</h2>
       <button id="toggle">toggle</button>
       <p id="t">Haz click en botón para ocultar párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>slideDown</h2>
+      <h2 id="título_uno">slideDown</h2>
       <button id="slideDown">slideDown</button>
       <p id="sD">Haz click en botón para mostrar párrafo oculto</p>
       <p id="po">Bienvenidos a mi página web</p>
+      <hr />
     </div>
 
     <div>
-      <h2>slideUp</h2>
+      <h2 id="título_uno">slideUp</h2>
       <button id="slideUp">slideUp</button>
       <p id="sU">Haz click en botón para ocultar párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>SlideToggle</h2>
+      <h2 id="título_uno">SlideToggle</h2>
       <button id="ST">SlideToggle</button>
       <p id="SlideToggle">Haz click en el botón para esconder este párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>fadeIn</h2>
+      <h2 id="título_uno">fadeIn</h2>
       <button id="fadeIn">fadeIn</button>
-      <p id="fI">Haz click en botón para que aparezca el párrafo</p>
+      <p id="parrafo_uno">Haz click en el botón para que aparezca el párrafo</p>
+      <p id="fI">Apareció el párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>fadeOut</h2>
+      <h2 id="título_uno">fadeOut</h2>
       <button id="fadeOut">fadeOut</button>
       <p id="fO">Haz click en botón para ocultar el párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>Agrega Clase</h2>
+      <h2 id="título_uno">Agrega Clase</h2>
       <button id="addClass">addClass</button>
-      <p>Haz click en el botón para que cambie de color</p>
+      <p id="parrafo_clase">Haz click en el botón para que cambie de color</p>
+      <hr />
     </div>
 
     <div>
-      <h2>Before</h2>
+      <h2 id="título_uno">Before</h2>
       <button id="before">before</button>
-      <p>
+      <p id="parrafo_uno">
         Haz click en botón para agregar antes de Villarrica, la palabra Eclipse
       </p>
       <p id="Vill">Villarrica</p>
+      <hr />
     </div>
 
     <div>
-      <h2>After</h2>
+      <h2 id="título_uno">After</h2>
       <button id="after">after</button>
-      <p>
+      <p id="parrafo_uno">
         Haz click en botón para agregar después de Eclipse, la palabra Temuco
       </p>
       <p id="eC">Eclipse</p>
+      <hr />
     </div>
 
     <div>
-      <h2>Append</h2>
+      <h2 id="título_uno">Append</h2>
       <button id="Append">Append</button>
-      <p>Haz click en botón para agregar Membrillo</p>
+      <p id="parrafo_uno">Haz click en botón para agregar Membrillo</p>
 
       <ul id="frutas">
         <li>Manzana</li>
         <li>Uva</li>
         <li>Pera</li>
       </ul>
+      <hr />
     </div>
 
     <div>
-      <h2>HTML</h2>
+      <h2 id="título_uno">HTML</h2>
       <button id="html">html</button>
       <p id="pa">Haz click en botón para cambiar el párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>Attr</h2>
+      <h2 id="título_uno">Attr</h2>
       <button id="attr">Attr</button>
       <p id="at">Haz click en botón para cambiar el párrafo</p>
+      <hr />
     </div>
 
     <div>
-      <h2>Text</h2>
+      <h2 id="título_uno">Text</h2>
       <button id="text">text</button>
       <p id="txt">Haz click en botón para cambiar el párrafo</p>
+      <hr />
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -161,7 +180,7 @@
         });
 
         $("#addClass").on("click", function () {
-          $("#addClass").addClass("blue");
+          $("#parrafo_clase").addClass("oro");
         });
 
         $("#before").on("click", function () {
@@ -169,7 +188,7 @@
         });
 
         $("#after").on("click", function () {
-          $("#eC").before("Temuco");
+          $("#eC").after("Temuco");
         });
 
         $("#Append").on("click", function () {
@@ -189,8 +208,6 @@
           $("#txt").text("Cambio con Text");
         });
       });
-
-      //$(elemento).fadeIn(speed,easing,callback)
     </script>
   </body>
 </html>

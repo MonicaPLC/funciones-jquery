@@ -1,0 +1,48 @@
+.oro {
+  background-color: green;
+}
+
+#título_uno {
+  text-align: center;
+  font-size: 30px;
+}
+#click,
+#hide,
+#show,
+#toggle,
+#slideDown,
+#slideUp,
+#ST,
+#fadeIn,
+#fadeOut,
+#addClass,
+#before,
+#after,
+#Append,
+#html,
+#attr,
+#text {
+  height: 35px;
+  width: 100px;
+}
+
+#parrafo_uno,
+#t,
+#sD,
+#sU,
+#SlideToggle,
+#fI,
+#fO,
+#parrafo_clase,
+#pa,
+#txt,
+#at {
+  display: inline;
+  margin-left: 500px;
+  font-family: "Trebuchet MS";
+}
+
+hr {
+  background-color: black;
+  height: 1px;
+}
