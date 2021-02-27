@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="funciones.css" />
-    <title>Document</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'
+    integrity='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=' crossorigin='anonymous'></script>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous'>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js'
+    integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0'
+    crossorigin='anonymous'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <link rel="stylesheet" type="text/css" href="funciones.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="contenedor" class="container">
+    <h2 id="jq">Ejercitando JQUERY</h2>
     <div id="uno">
       <h2 id="título_uno">Click</h2>
-      <button id="click">click</button>
       <p id="parrafo_uno">Haz click en el botón para recibir un mensaje</p>
-      <hr />
+      <button class="btn btn-primary" id="click">click</button>
     </div>
-
+    <hr id="hr">
+    <br>
     <div>
       <h2 id="título_uno">Hide</h2>
-      <button id="hide">hide</button>
+      <button class="btn btn-primary" id="hide">hide</button>
       <p id="parrafo_uno">
         Haz click en el botón para hacer desaparecer el botón
       </p>
@@ -25,7 +39,7 @@
 
     <div>
       <h2 id="título_uno">Show</h2>
-      <button id="show">Show</button>
+      <button class="btn btn-primary" id="show">Show</button>
       <p id="parrafo_uno">Haz click en botón para mostrar párrafo oculto</p>
       <p id="oculto">Estaba oculto</p>
       <hr />
@@ -33,36 +47,36 @@
 
     <div>
       <h2 id="título_uno">toggle</h2>
-      <button id="toggle">toggle</button>
+      <button class="btn btn-primary" id="toggle">toggle</button>
       <p id="t">Haz click en botón para ocultar párrafo</p>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">slideDown</h2>
-      <button id="slideDown">slideDown</button>
       <p id="sD">Haz click en botón para mostrar párrafo oculto</p>
       <p id="po">Bienvenidos a mi página web</p>
+      <button class="btn btn-primary" id="slideDown">slideDown</button>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">slideUp</h2>
-      <button id="slideUp">slideUp</button>
       <p id="sU">Haz click en botón para ocultar párrafo</p>
+      <button class="btn btn-primary" id="slideUp">slideUp</button>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">SlideToggle</h2>
-      <button id="ST">SlideToggle</button>
+      <button class="btn btn-primary" id="ST">SlideToggle</button>
       <p id="SlideToggle">Haz click en el botón para esconder este párrafo</p>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">fadeIn</h2>
-      <button id="fadeIn">fadeIn</button>
+      <button class="btn btn-primary" id="fadeIn">fadeIn</button>
       <p id="parrafo_uno">Haz click en el botón para que aparezca el párrafo</p>
       <p id="fI">Apareció el párrafo</p>
       <hr />
@@ -70,21 +84,21 @@
 
     <div>
       <h2 id="título_uno">fadeOut</h2>
-      <button id="fadeOut">fadeOut</button>
+      <button class="btn btn-primary" id="fadeOut">fadeOut</button>
       <p id="fO">Haz click en botón para ocultar el párrafo</p>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">Agrega Clase</h2>
-      <button id="addClass">addClass</button>
+      <button class="btn btn-primary" id="addClass">addClass</button>
       <p id="parrafo_clase">Haz click en el botón para que cambie de color</p>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">Before</h2>
-      <button id="before">before</button>
+      <button class="btn btn-primary" id="before">before</button>
       <p id="parrafo_uno">
         Haz click en botón para agregar antes de Villarrica, la palabra Eclipse
       </p>
@@ -94,7 +108,7 @@
 
     <div>
       <h2 id="título_uno">After</h2>
-      <button id="after">after</button>
+      <button class="btn btn-primary" id="after">after</button>
       <p id="parrafo_uno">
         Haz click en botón para agregar después de Eclipse, la palabra Temuco
       </p>
@@ -104,110 +118,119 @@
 
     <div>
       <h2 id="título_uno">Append</h2>
-      <button id="Append">Append</button>
+      <button class="btn btn-primary" id="Append">Append</button>
       <p id="parrafo_uno">Haz click en botón para agregar Membrillo</p>
+      <br>
+      <div id="f">
+        <ul id="frutas">
+          <li>Manzana</li>
+          <li>Uva</li>
+          <li>Pera</li>
+        </ul>
+      </div>
 
-      <ul id="frutas">
-        <li>Manzana</li>
-        <li>Uva</li>
-        <li>Pera</li>
-      </ul>
+
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">HTML</h2>
-      <button id="html">html</button>
+      <button class="btn btn-primary" id="html">html</button>
       <p id="pa">Haz click en botón para cambiar el párrafo</p>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">Attr</h2>
-      <button id="attr">Attr</button>
+      <button class="btn btn-primary" id="attr">Attr</button>
       <p id="at">Haz click en botón para cambiar el párrafo</p>
       <hr />
     </div>
 
     <div>
       <h2 id="título_uno">Text</h2>
-      <button id="text">text</button>
+      <button class="btn btn-primary" id="text">text</button>
       <p id="txt">Haz click en botón para cambiar el párrafo</p>
       <hr />
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </div>
 
-    <script>
-      $(document).ready(function () {
-        $("#click").click(function () {
-          alert("Hola");
-        });
 
-        $("#hide").on("click", function () {
-          $("#hide").hide();
-        });
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        $("#oculto").hide();
-        $("#show").on("click", function () {
-          $("#oculto").show();
-        });
-
-        $("#toggle").on("click", function () {
-          $("#t").toggle();
-        });
-
-        $("#po").hide();
-        $("#slideDown").on("click", function () {
-          $("#po").slideDown();
-        });
-
-        $("#slideUp").on("click", function () {
-          $("#sU").slideUp();
-        });
-
-        $("#ST").on("click", function () {
-          $("#SlideToggle").slideToggle();
-        });
-
-        $("#fI").hide();
-        $("#fadeIn").on("click", function () {
-          $("#fI").fadeIn();
-        });
-
-        $("#fadeOut").on("click", function () {
-          $("#fO").fadeOut();
-        });
-
-        $("#addClass").on("click", function () {
-          $("#parrafo_clase").addClass("oro");
-        });
-
-        $("#before").on("click", function () {
-          $("#Vill").before("Eclipse");
-        });
-
-        $("#after").on("click", function () {
-          $("#eC").after("Temuco");
-        });
-
-        $("#Append").on("click", function () {
-          $("#frutas").append("<li>Membrillo</li>"); // no se como colocarlo
-        });
-
-        $("#html").on("click", function () {
-          $("#pa").html("Este párrafo es mejor");
-        });
-
-        $("#attr").on("click", function () {
-          var parrafo = $("#at").attr("id");
-          alert(parrafo);
-        });
-
-        $("#text").on("click", function () {
-          $("#txt").text("Cambio con Text");
-        });
+  <script>
+    $(document).ready(function () {
+      $("#click").click(function () {
+        alert("Hola");
       });
-    </script>
-  </body>
+
+      $("#hide").on("click", function () {
+        $("#hide").hide();
+      });
+
+      $("#oculto").hide();
+      $("#show").on("click", function () {
+        $("#oculto").show();
+      });
+
+      $("#toggle").on("click", function () {
+        $("#t").toggle();
+      });
+
+      $("#po").hide();
+      $("#slideDown").on("click", function () {
+        $("#po").slideDown();
+      });
+
+      $("#slideUp").on("click", function () {
+        $("#sU").slideUp();
+      });
+
+      $("#ST").on("click", function () {
+        $("#SlideToggle").slideToggle();
+      });
+
+      $("#fI").hide();
+      $("#fadeIn").on("click", function () {
+        $("#fI").fadeIn();
+      });
+
+      $("#fadeOut").on("click", function () {
+        $("#fO").fadeOut();
+      });
+
+      $("#addClass").on("click", function () {
+        $("#parrafo_clase").addClass("oro");
+      });
+      //before antes
+      $("#before").on("click", function () {
+        $("#Vill").before("<p id='Vill'>Eclipse</p>");
+      });
+      //after: después
+
+      $("#after").on("click", function () {
+        $("#eC").after("<p id='eC'>Temuco</p>");
+      });
+
+      $("#Append").on("click", function () {
+        $("#frutas").append("<li>Membrillo</li>"); // no se como colocarlo
+      });
+
+      $("#html").on("click", function () {
+        $("#pa").html("Este párrafo es mejor");
+      });
+
+      $("#attr").on("click", function () {
+        var parrafo = $("#at").attr("id");
+        alert(parrafo);
+      });
+
+      $("#text").on("click", function () {
+        $("#txt").text("Cambio con Text");
+      });
+    });
+  </script>
+</body>
+
 </html>

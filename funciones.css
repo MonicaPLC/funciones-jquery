@@ -2,10 +2,30 @@
   background-color: green;
 }
 
+#contenedor {
+  border: 10px solid black;
+  border-radius: 20px;
+  width: 80%;
+}
+
+hr {
+  border: 3px solid blue;
+  height: 2px;
+  width: 100%;
+}
+
 #título_uno {
   text-align: center;
   font-size: 30px;
 }
+
+#jq,
+#Vill,
+#eC {
+  text-align: center;
+  font-family: Arial Black;
+}
+
 #click,
 #hide,
 #show,
@@ -24,6 +44,9 @@
 #text {
   height: 35px;
   width: 100px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
 }
 
 #parrafo_uno,
@@ -40,9 +63,4 @@
   display: inline;
   margin-left: 500px;
   font-family: "Trebuchet MS";
-}
-
-hr {
-  background-color: black;
-  height: 1px;
 }
